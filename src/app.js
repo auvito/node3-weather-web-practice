@@ -3,8 +3,8 @@ const express = require('express')
 const hbs = require('hbs')
 const app = express()
 const port = process.env.PORT || 3000
-const forecast = require('../../weather-app/utils/forecast')
-const geocode = require('../../weather-app/utils/geocode')
+const forecast = require('forecast')
+const geocode = require('geocode')
 
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
